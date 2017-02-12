@@ -1,6 +1,8 @@
 # pi-sip
 Detailed explaination of setting up a sip server on CentOS 7 and sip client on Raspberry Pi
 
+**Note: submit [new issues](https://github.com/nikhiljohn10/pi-sip/issues/new) for corrections**
+
 ## CentOS 7 setup
 
 ```
@@ -93,18 +95,19 @@ service kamailio start # If everything is working fine, this should show a 'succ
 ```
 
 **Following informations are required to connect to this server**
-- username: test1@SERVER_IP:5060,
-- password: password1,
-- outbound_proxy: SERVER_IP:5060,
+
+- username: test1@SERVER_IP:5060
+- password: password1
+- outbound_proxy: SERVER_IP:5060
 - TLS protocols: TLSv1
 
 You can use any SIP clients like,
 
 - [SIP SIMPLE Client](http://sipsimpleclient.org/projects/sipsimpleclient/wiki/SipInstallation)
-- [Blink](http://icanblink.com/) # Try `sudo apt update && sudo apt upgrade && sudo apt install blink` on ubuntu based linux
-- [Jitsi](https://jitsi.org/Main/Download) # Installation is little tricky when you can't find dependancies. But after some searching you can install it. This [link](https://github.com/jitsi/jitsi-meet/wiki/Debian-installation) may help you.
+- [Blink](http://icanblink.com/) - Try `sudo apt update && sudo apt upgrade && sudo apt install blink` on ubuntu based linux
+- [Jitsi](https://jitsi.org/Main/Download) - Installation is little tricky when you can't find dependancies. But after some searching you can install it. This [link](https://github.com/jitsi/jitsi-meet/wiki/Debian-installation) may help you.
 - [MicroSIP](http://www.microsip.org/)
-- [SessionChat](https://itunes.apple.com/us/app/sessionchat-sip-softphone/id362501443?mt=8) # This works well on iOS voice call to server
+- [SessionChat](https://itunes.apple.com/us/app/sessionchat-sip-softphone/id362501443?mt=8) - This works well on iOS voice call to server
 
 ## Building a custom SIP client
 
@@ -116,8 +119,11 @@ You can use any SIP clients like,
 
 ---
 
-** References **
+
+**References**
 
 [Initial Server Setup with CentOS 7](https://www.digitalocean.com/community/tutorials/initial-server-setup-with-centos-7)
+
 [Additional Recommended Steps for New CentOS 7 Server](https://www.digitalocean.com/community/tutorials/additional-recommended-steps-for-new-centos-7-servers)
+
 [Howto: Kamailio SIP proxy with hosted NAT traversal on Debian Wheezy](https://richardskingdom.net/howto-kamailio-sip-proxy-nat-debian-wheezy)
