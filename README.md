@@ -3,7 +3,7 @@ Detailed explaination of setting up a sip server on CentOS 7 and sip client on R
 
 **Note: submit [new issues](https://github.com/nikhiljohn10/pi-sip/issues/new) for corrections**
 
-## CentOS 7 setup
+## CentOS 7/8 setup
 
 ```
 (local)$ ssh root@SERVER_IP
